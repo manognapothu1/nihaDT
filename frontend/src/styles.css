@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background: #2d6cdf;
+  color: #fff;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .brand {
+  font-weight: bold;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.topbar a,
+.link-button {
+  color: #fff;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 20px 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccd6e0;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button {
+  background: #2d6cdf;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error-box,
+.success-box,
+.info-box {
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.error-box {
+  background: #ffe6e6;
+  color: #a32626;
+}
+
+.success-box {
+  background: #e9f8ee;
+  color: #1f7a3f;
+}
+
+.info-box {
+  background: #e8f0ff;
+  color: #2b5bcc;
+}
+
+.summary-row,
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.summary-box {
+  background: #f7f9ff;
+  border: 1px solid #dbe2f2;
+  border-radius: 8px;
+  padding: 14px;
+  min-width: 140px;
+  text-align: center;
+}
+
+.summary-box strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f2f6ff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eef3fb;
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar nav {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .summary-row,
+  .filter-row {
+    flex-direction: column;
+  }
+}
